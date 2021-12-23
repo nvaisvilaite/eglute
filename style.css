@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.all {
+    position: absolute;
+    top: 20%;
+}
+.star {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(235, 238, 45);
+    transform: rotate(45deg);
+    animation: mymove 5s infinite;
+}
+.green {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: green;
+}
+.line {
+    display: flex;
+    justify-content: center;
+}
+.line-one {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.bottom {
+    width: 50px;
+    height: 70px;
+    background-color: brown;
+    margin: 0 auto;
+    box-shadow: inset 0px 1px 16px 4px #4c2626;
+    border-radius: 10%;
+}
+.bucket {
+    width: 100px;
+    position: absolute;
+    border-left: 21px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid #3e2825;
+    transform: translate(124px, -29px);
+
+}
+.shiny1 {
+    background-color: rgb(28, 36, 20);
+    animation-delay: 1s;
+    animation: shiny 3s infinite;
+    animation-delay: 1s;
+}
+.shiny2 {
+    background-color: rgb(43, 5, 180);
+    animation-delay: 1s;
+    animation: shiny 2s infinite;
+    animation-delay: 1s;
+}
+.shiny3 {
+    background-color: rgb(252, 151, 0);
+    animation-delay: 1s;
+    animation: shiny 1s infinite;
+    animation-delay: 1s;
+}
+@keyframes shiny {
+    0% {
+      background-color: rgb(32, 32, 56);
+    }
+    10% {
+        background-color: aquamarine;
+    }
+    25% {
+      background-color: rgb(50, 103, 134);
+    }
+    50% {
+      background-color: rgb(185, 42, 150);
+    }
+    75% {
+      background-color: rgb(219, 179, 219);
+    }
+    90% {
+      background-color: rgb(31, 3, 8);
+    }
+  }
+  @keyframes mymove {
+    50% {transform: rotate(360deg);}
+  }
